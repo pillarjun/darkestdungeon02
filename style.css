@@ -1,0 +1,148 @@
+<style>
+  @font-face {
+  font-family: 'YiSunShinRegular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/YiSunShinRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  } /* 얘는 왜 분리가 안 될까*/
+  @font-face {
+  font-family: '국립박물관문화재단클래식B';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+  .yss{
+  font-family: 'YiSunShinRegular'
+  }
+  .bmg{
+    font-family: '국립박물관문화재단클래식B'
+  }
+  a{
+    color:white;
+    text-decoration: none;
+  }
+  h1{
+    font-size:45px;
+    text-align: center;
+    border:5px solid yellow;
+    /*display:inline;*/ /*이건 글자 테두리 박스 크기 딱 맞게 만드는거*/
+    padding:5px;
+  }/*헤드라인 글자 및 글자 테두리 박스, 중앙 정렬*/
+  h2{
+    font-size:40px;
+    text-align: center;
+  }
+  qwer{
+      text-align: center;
+      padding-top: 30px
+  }
+  .nothing{
+    color: gray;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr;/*이미지와 인덱스 분리*/
+  }
+  #grid ul{
+    padding-left: 10px; /*굳이 예쁘게 만드려고 패딩 값 설정*/
+  }
+
+  @media(max-width:600px){
+    #grid{
+      display: block;/*width 600 아래로는 모바일 뷰어*/
+    }
+  }
+
+    input[id="menuicon"]{
+      display: none;
+    }
+    input[id="menuicon"] + label{
+      display: block;
+      width: 60px;
+      height: 40px;
+      position: fixed;
+      right: 0;
+      top: calc(50% - 25px);
+      transition: all .35s
+      cursor: pointer;
+    }
+    input[id="menuicon"] + label span{
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 5px;
+      border-redius: 30px;
+      background: #999;
+      transition: all.35s;
+    }
+    input[id="menuicon"]:checked + label{
+      z-index: 2;
+      right:300px;
+    }
+    input[id="menuicon"] + label span:nth-child(1){
+      top:0;
+    }
+    input[id="menuicon"] + label span:nth-child(2){
+      top:50%;
+      transform: translateY(-50%);
+    }
+    input[id="menuicon"] + label span:nth-child(3){
+      bottom: 0;
+    }
+    input[id="menuicon"]:checked + label span:nth-child(1){
+      top:50%;
+      transform: translateY(-50%) rotate(45deg);
+
+    }
+    input[id="menuicon"]:checked + label span:nth-child(2){
+      opacity:0;
+
+    }
+    input[id="menuicon"]:checked + label span:nth-child(3){
+      bottom: 50%;
+      transform: translateY(50%) rotate(-45deg);
+
+    }
+    div[class="sidebar"]{
+      width: 300px;
+      height: 100%;
+      background: #222;
+      position: fixed;
+      top:0;
+      right:-300px;
+      z-index: 1;
+      transition: all .35s;
+    }
+    input[id="menuicon"]:checked + label + div{
+      right:0;
+    }
+
+      input[type="radio"]{display: none;}
+      input[type="radio"]+label{
+      display: inline-block;
+      padding: 20px;
+      background: #ccc;
+      color: #999;
+      font-size: 14px;
+      cursor: pointer;}
+      input[type="radio"]:checked+label{
+      background: #aaa;
+      color:#000;}
+
+      .conbox{
+        width: 100%;
+        height: 100%;
+        background: #000;
+        margin: 0 auto; /*가운데정렬*/
+        display: none;
+        position: relative;
+
+      }
+      input[id="table01"]:checked ~ .con1 {display:block;}
+      input[id="table02"]:checked ~ .con2 {display:block;}
+      input[id="table03"]:checked ~ .con3 {display:block;}
+      .tab_content{
+        padding-left: 50px;
+      }
+
+</style>
