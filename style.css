@@ -144,5 +144,35 @@
       .tab_content{
         padding-left: 50px;
       }
+      .evolve {position:relative;display:inline-block;}
+      .evolve img {max-width:100%;}
+      .evolve span.text {
+      	position:absolute;
+      	top:50%; left:0;
+      	transform:translateY(-50%);
+      	display:none; width:100%; font-size:50px; color:#fff; font-weight:900;
+      	text-align:center;
+      }
+      .evolve::before, .evolve::after{
+      	content:'';
+      	position:absolute;
+      	top:50%; left:50%;
+      	transform:translate(-50%,-50%);
+      	transition:all .8s;
+      	-webkit-transition:all .8s;
+      }
+      .evolve::before {
+      	width:97%;height:95%;border-top:2px solid #4aa8d8;border-bottom:2px solid #4aa8d8;width:0;
+      	z-index:1;
+      }
+      .evolve::after {
+      	width:97%;height:95%;border-left:2px solid #4aa8d8;border-right:2px solid #4aa8d8;height:0;
+      }
+
+
+      .evolve:hover span.text {display:block;}
+      .evolve:hover::before {width:calc(97% + 4px);}
+      .evolve:hover::after {height:calc(95% + 4px);}
+
 
 </style>
