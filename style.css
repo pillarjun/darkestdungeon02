@@ -42,7 +42,9 @@
   .sidebar > ul > li{
     margin-top: 20px;
   }
-
+  h3{
+    font-size:24px;
+  }
 
 
     input[id="menuicon"]{
@@ -197,7 +199,7 @@
     	/* input에 체크되면 슬라이드 효과 */
     	.section input[id="slide01"]:checked ~ .slidewrap .slidelist > li {transform:translateX(0%);}
     	.section input[id="slide02"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-100%);}
-    	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-200%);}
+    	.section input[id="slide03"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-202%);}
       .section input[id="slide04"]:checked ~ .slidewrap .slidelist > li {transform:translateX(-302%);}
 
 
@@ -223,11 +225,47 @@
     	.slide-pagelist {text-align:center;padding:20px;}
     	.slide-pagelist > li {display:inline-block;vertical-align:middle;}
     	.slide-pagelist > li > label {display:block;padding:8px 30px;border-radius:30px;background:#fff;margin:20px 10px;cursor:pointer;}
-    	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#555;}
-    	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#555;}
-    	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#555;}
-      .section input[id="slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#555;}
+    	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#222;}
+    	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#222;}
+    	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#222;}
+      .section input[id="slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#222;}
 
+
+      input[id*="update"]{
+      	display:none;
+      }
+      input[id*="update"] + label {
+      	display:block;
+      	padding:20px;
+      	border:1px solid #222;
+      	border-bottom:0;
+      	color:#fff;
+      	font-weight:900;
+      	background:#000;
+      	cursor:pointer;
+      	position:relative;
+      }
+      input[id*="update"] + label em {
+      	position:absolute;
+      	top:50%; right:10px; width:30px; height:30px;
+      	margin-top: -15px;
+      	display:inline-block;
+      	background:url('arrow.png') 0 0 no-repeat;
+      }
+      input[id*="update"] + label + div{
+      	max-height:0;
+        padding-left: 20px;
+      	transition: all .5s;
+      	overflow:hidden;
+      	background:#222;
+      	font-size:12px;
+      }
+      input[id*="update"] + label + div p{
+      	display:inline-block;
+      	padding:20px;
+      }
+      input[id*="update"]:checked + label + div {max-height:1000px;}
+      input[id*="update"]:checked + label em {background-position:0 -30px}
 
 
 
