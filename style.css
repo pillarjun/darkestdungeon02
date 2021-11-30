@@ -12,10 +12,11 @@
   font-style: normal;
   }
   .yss{
-  font-family: 'YiSunShinRegular'
+  font-family: 'YiSunShinRegular';
   }
   .bmg{
-    font-family: '국립박물관문화재단클래식B'
+    font-family: '국립박물관문화재단클래식B';
+    margin:0 auto;
   }
   a{
     color:white;
@@ -29,7 +30,7 @@
     padding:5px;
   }/*헤드라인 글자 및 글자 테두리 박스, 중앙 정렬*/
   h2{
-    font-size:40px;
+    font-size:30px;
     text-align: center;
   }
   qwer{
@@ -38,6 +39,7 @@
   }
   .nothing{
     color: gray;
+    font-size:20px;
   }
   .sidebar > ul > li{
     margin-top: 20px;
@@ -136,7 +138,7 @@
       input[id="table02"]:checked ~ .con2 {display:block;}
       input[id="table03"]:checked ~ .con3 {display:block;}
       .tab_content{
-        padding-left: 50px;
+        padding-left: 150px;
       }
       .evolve {position:relative;display:inline-block;}
       .evolve img {max-width:100%;}
@@ -267,6 +269,37 @@
       input[id*="update"]:checked + label + div {max-height:1000px;}
       input[id*="update"]:checked + label em {background-position:0 -30px}
 
+
+      .gallerybox {}
+      .youtubelist {
+      	max-width:95%;
+      	margin:0 auto;
+      	font-size:0;
+      }
+      .youtubelist > li {
+      	display:inline-block;
+      	vertical-align:top;
+      	width:33.3%;
+      }
+      .youtubelist > li > div {
+      	width:auto;
+      	padding:15px;
+      }
+      .youtubelist > li .screen {
+      	display:block;
+      	width:auto;
+      	position:relative;
+      }
+      .youtubelist > li .screen img {width:100%;}
+      .youtubelist > li .screen .on {
+      	position:absolute;
+      	top:0;left:0;
+      	opacity:0;
+      	transition:all .5s;
+      }
+      .youtubelist > li:hover .screen .on {opacity:1;}
+      .youtubelist > li h3 {font-size:16px;color:#000;font-weight:900;}
+      .youtubelist > li p {font-size:12px;color:#999;font-weight:500}
 
 
 </style>
