@@ -223,10 +223,10 @@
     	.slide-pagelist {text-align:center;padding:20px;}
     	.slide-pagelist > li {display:inline-block;vertical-align:middle;}
     	.slide-pagelist > li > label {display:block;padding:8px 30px;border-radius:30px;background:#fff;margin:20px 10px;cursor:pointer;}
-    	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fffb37;}
-    	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fffb37;}
-    	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fffb37;}
-      .section input[id="slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fffb37;}
+    	.section input[id="slide01"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(1) > label {background:#fff;}
+    	.section input[id="slide02"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(2) > label {background:#fff;}
+    	.section input[id="slide03"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(3) > label {background:#fff;}
+      .section input[id="slide04"]:checked ~ .slidewrap .slide-pagelist > li:nth-child(4) > label {background:#fff;}
 
 
 
