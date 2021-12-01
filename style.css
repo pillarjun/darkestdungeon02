@@ -301,5 +301,19 @@
       .youtubelist > li h3 {font-size:16px;color:#000;font-weight:900;}
       .youtubelist > li p {font-size:12px;color:#999;font-weight:500}
 
+      @keyframes fadein {
+          from {
+              opacity: 0;
+          }
+          to {
+              opacity: 1;
+          }
+      }
+
+      .topimg{
+        display: inline-block;
+        animation: fadein 3s;
+       }
+
 
 </style>
