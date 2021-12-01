@@ -113,17 +113,21 @@
       right:0;
     }
 
+
+
       input[type="radio"] {display: none;}
+
       input[type="radio"]+label{
       display: inline-block;
       padding: 20px;
-      background: #ccc;
-      color: #999;
+      background: #aaa;
+      color: #333;
       font-size: 14px;
       cursor: pointer;}
+
       input[type="radio"]:checked+label{
-      background: #aaa;
-      color:#000;}
+      background: #333;
+      color:#aaa;}
 
       .conbox{
         width: 100%;
@@ -132,14 +136,19 @@
         margin: 0 auto; /*가운데정렬*/
         display: none;
         position: relative;
-
       }
+
       input[id="table01"]:checked ~ .con1 {display:block;}
       input[id="table02"]:checked ~ .con2 {display:block;}
       input[id="table03"]:checked ~ .con3 {display:block;}
+      input[id="table04"]:checked ~ .con4 {display:block;}
+      input[id="table05"]:checked ~ .con5 {display:block;}
+
+
       .tab_content{
         padding-left: 150px;
       }
+
       .evolve {position:relative;display:inline-block;}
       .evolve img {max-width:100%;}
       .evolve span.text {
