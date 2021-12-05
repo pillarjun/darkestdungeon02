@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Darkest Dungeon II</title>
+    <meta charset="utf-8">
+      <style>
+        @font-face {
+        font-family: '국립박물관문화재단클래식B';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+      </style>
+
+    	<style>
+        @font-face {
+        font-family: '국립박물관문화재단클래식B';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.0/국립박물관문화재단클래식B.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+        }
+        .credit {
+          background-color: #111;
+          background-image: radial-gradient(#333, #111);
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          color: #fff;
+          text-align: center;
+          width: 100vw;
+          font-weight: 700;
+          overflow: hidden;
+          font-family: 'Montserrat', sans-serif;
+        }
+      #fly-in {
+        font-size: 4em;
+        margin: 40vh auto;
+        height: 20vh;
+        text-transform: uppercase;
+      }
+      #fly-in span {
+        display: block;
+        font-size: .4em;
+        opacity: .8;
+      }
+      #fly-in div {
+       position: fixed; <!--codepen.io/h-kod/-->
+        margin: 2vh 0;
+        opacity: 0;
+        left: 10vw;
+        width: 80vw;
+        animation: switch 32s linear 1;
+      }
+      #fly-in div:nth-child(2) { animation-delay: 4s}
+      #fly-in div:nth-child(3) { animation-delay: 8s}
+      #fly-in div:nth-child(4) { animation-delay: 12s}
+      #fly-in div:nth-child(5) { animation-delay: 16s}
+      #fly-in div:nth-child(6) { animation-delay: 20s}
+      #fly-in div:nth-child(7) { animation-delay: 24s}
+      #fly-in div:nth-child(8) { animation-delay: 28s}
+      @keyframes switch {
+          0% { opacity: 0;filter: blur(20px); transform:scale(12)}
+          3% { opacity: 1;filter: blur(0); transform:scale(1)}
+          10% { opacity: 1;filter: blur(0); transform:scale(.9)}
+          13% { opacity: 0;filter: blur(10px); transform:scale(.1)}
+          80% { opacity: 0}
+          100% { opacity: 0}
+      }
+    	</style>
+
+      <link rel="stylesheet" href="style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-50LRKQSCXD"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-50LRKQSCXD');
+    </script>
+  </head>
+
+  <body style="background:url(system.png); color:white;" class="bmg" class="credit">
+
+    <div id="fly-in">
+    <div><span></span>다키스트 던전은 상상할 수 있는<br>모든 최악의 상황을 구현한 게임입니다.</div>
+    <div><span></span>당신은 첫 번째 여정 혹은 열 번째 여정에서조차<br>승리를 기대하지 못 할지도 모릅니다.</div>
+    <div><span></span>영웅들은 죽음에 이르고,<br>무수히 많은 실패가 당신을 기다릴 것이며,</div>
+    <div><span></span>세상은 당신의 불꽃을 사그라트리려고 할 것입니다.</div>
+    <div><span></span>포기하지 마십시오.</div>
+    <div><span></span>잠식해오는 황손 속으로 진군하십시오.</div>
+    <div><span></span>그리고 그 곳에서 당신의 두려움을 마주하십시오.</div>
+    <div><span></span>구원은, 마침내, 얼어붙은 심연 속에서 찾게 되리니...</div>
+    </div>
+
+    <div>
+      <!--여기서부터 우측 인덱스-->
+      <input type="checkbox" id="menuicon">
+      <label for="menuicon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="sidebar" style="font-size:36px">
+          <ul style="padding-left:35px"><br><br>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="gamestory.html">Gamestory</a></li>
+            <li><a href="system.html">System</a></li>
+            <li><a href="crossroads.html">Crossroads</a></li>
+            <li><a href="area.html">Area</a></li>
+            <li><a href="event.html">Event</a></li>
+            <li><a href="enermy.html">Enermy</a></li>
+            <li><a href="etc.html">ETC</a></li>
+          </ul>
+      </div>
+      <!--여기까지가  측 인덱스-->
+    </div>
+
+
+  </body>
+</html>
